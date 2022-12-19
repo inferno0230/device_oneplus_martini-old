@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=OnePlus 9 Pro
+bluetooth.device.default_name=OnePlus 9RT
 
 # Graphics
 ro.surface_flinger.set_idle_timer_ms=250
