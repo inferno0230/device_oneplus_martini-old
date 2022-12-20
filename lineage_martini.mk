@@ -14,6 +14,9 @@ $(call inherit-product, device/oneplus/martini/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
@@ -21,7 +24,7 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := MT2111
 
 PRODUCT_SYSTEM_NAME := OnePlus9RT
-PRODUCT_SYSTEM_DEVICE := OP5155L1
+PRODUCT_SYSTEM_DEVICE := OnePlus9RT
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
