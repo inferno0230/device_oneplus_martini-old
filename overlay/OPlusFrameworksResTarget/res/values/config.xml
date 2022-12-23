@@ -432,12 +432,21 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -540,0 L -540,107 L -390,107 L -390,0 Z</string>
-
+         <string translatable="false" name="config_mainBuiltInDisplayCutout">M 97 70 M 64.5 70 C 64.5 78.616 67.926 86.888 74.019 92.981 C 80.112 99.074 88.384 102.5 97 102.5 C 105.616 102.5 113.888 99.074 119.981 92.981 C 126.074 86.888 129.5 78.616 129.5 70 C 129.5 61.384 126.074 53.112 119.981 47.019 C 113.888 40.926 105.616 37.5 97 37.5 C 88.384 37.5 80.112 40.926 74.019 47.019 C 67.926 53.112 64.5 61.384 64.5 70 Z @left</string>
+    
+  
+    <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
+         one single bounding rect per device edge to the app via
+         {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
+         appearance of the cutout as much as possible, and may be smaller than
+         config_mainBuiltInDisplayCutout
+         -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">M 0.0, 0.0 h 156 v 104 h -156 Z @left</string>
+    
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
-    <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
